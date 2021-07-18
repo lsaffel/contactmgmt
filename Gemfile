@@ -13,7 +13,7 @@ gem 'jbuilder', '~> 2.7'
 
 gem 'bootsnap', '>= 1.4.4', require: false
 gem "heroicon"
-gem 'rails_heroicons', '~> 1.0.1'
+
 gem 'inline_svg'
 
 group :development, :test do
