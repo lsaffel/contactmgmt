@@ -8,9 +8,37 @@
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+      <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+      <%= stylesheet_link_tag 'application', media: 'all' %>
+      <%= stylesheet_pack_tag 'application', media: 'all' %>
+      <%= javascript_pack_tag 'application' %>
+      <%= yield :head %>
+
+  <%# stimulus_include_tags %>
   </head>
 
-  <body>
-    <%= yield %>
-  </body>
+<body>
+  <div>
+    <div class="pb-32">
+      <%= render 'layouts/navbar' %>
+      <header class="py-10">
+        <div class="max-w-9xl mx-auto px-4 sm:px-6 lg:px-8">
+          <p class="notice"><%= notice %></p>
+          <p class="alert"><%= alert %></p>
+          <h1 class="text-3xl font-bold">
+            Put the nav bar here
+          </h1>
+        </div>
+      </header>
+    </div>
+
+    <main class="-mt-32">
+      <div class="max-w-9xl mx-auto pb-12 px-4 sm:px-6 lg:px-8">
+        <%= yield %>
+      </div>
+    </main>
+
+  </div>
+</body>
 </html>
