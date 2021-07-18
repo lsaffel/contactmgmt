@@ -14,7 +14,8 @@ import 'alpine-turbo-drive-adapter'
 require("alpinejs")
 
 // import tailwind into javascript
-import "../stylesheets/application.scss"
+// import "../stylesheets/application.scss"
+import "stylesheets/application";
 
 Rails.start()
 ActiveStorage.start()
