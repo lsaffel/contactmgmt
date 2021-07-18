@@ -4,3 +4,10 @@
 @import "tailwindcss/utilities";
 
 /* Add custom CSS here */
+
+/* test class */
+
+.my-own-class {
+	
+	@apply bg-gray-500 text-white;
+}

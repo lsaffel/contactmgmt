@@ -5,22 +5,22 @@
 // LS - text below added from https://btihen.me/post_ruby_rails/rails_6_1_tailwind_2_0_alpinejs/
 
 import Rails from "@rails/ujs"
-import "@hotwired/turbo-rails"
+// import "@hotwired/turbo-rails"		cannot resolve this one
 import * as ActiveStorage from "@rails/activestorage"
 import "channels"
+// import tailwind into javascript
+// import "../stylesheets/application.scss"
+import "stylesheets/application";
 
 // import alpinejs and its necessary rails adaptation
 import 'alpine-turbo-drive-adapter'
 require("alpinejs")
 
-// import tailwind into javascript
-// import "../stylesheets/application.scss"
-import "stylesheets/application";
 
 Rails.start()
 ActiveStorage.start()
 
-import "controllers"
+// import "controllers"		cannot resolve this one
 
-require("trix")
-require("@rails/actiontext")
+// require("trix")			cannot resolve this one
+// require("@rails/actiontext")    cannot resolve this one
